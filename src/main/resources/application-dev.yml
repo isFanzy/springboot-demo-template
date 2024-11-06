@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://127.0.0.1:3306/demo
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        dev:
+          url: jdbc:mysql://127.0.0.1:3306/demo
+          username: root
+          password: root
+          driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    top.fanzy.template.mapper: debug

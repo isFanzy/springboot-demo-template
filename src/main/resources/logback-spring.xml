@@ -21,8 +21,7 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
             %n是换行符
         -->
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <pattern>%red(%d{E yyyy-MM-dd HH:mm:ss.SSS}) %red(---){faint} %red(%-5p) %red(${PID}){faint}
-                %boldGreen([%t]){cyan} %boldGreen(%-40.40logger{40}){highlight} %boldMagenta(:){red} %boldMagenta(%m){faint}%n</pattern>
+            <pattern>%red(%d{E yyyy-MM-dd HH:mm:ss.SSS}) %red(---){faint} %red(%-5p) %red(${PID}){faint} %boldGreen([%t]){cyan} %boldGreen(%-40.40logger{40}){highlight} %boldMagenta(:){red} %black(%m){faint}%n</pattern>
         </layout>
     </appender>
 
